@@ -10,7 +10,7 @@ project 1 - A Random Quote Generator
 /*** 
  * `quotes` array 
 ***/
-
+// REMEMBER an object array has one actual "array" in it. It's array location is 0,0. The objects themselves are called by name??
 var quotes = [
   {
   quote: "I consider looseness with words no less of a defect than looseness of the bowels.",
@@ -30,11 +30,13 @@ var quotes = [
   },
   {
   quote: "It is evident, by both Scripture and reason, that God is infinitely, eternally, unchangeably, and independently glorious and happy: that He cannot be profited by, or receive any thing from, the creature.",
-  source: "Jonathan Edwards"
+  source: "Jonathan Edwards",
+  citation: "TBD"
   },
   {
   quote: "The love of God in our culture has been purged of anything the culture finds uncomfortable. The love of God has been sanitized, democratized, and above all sentimentalized." ,
-  source: "D.A. Carson"  
+  source: "D.A. Carson",
+  year: "TBD"  
   },
   {
   quote: "No matter how intense our experiences, no matter how acute our perceptions of what we think God would have us do, we cannot be certain God has spoken unless our revelation is based on Scripture." ,
@@ -44,19 +46,23 @@ var quotes = [
   quote: "Rythyms of piety, soccer, Lord's Day Worship, Clemson, and Warm Greetings." ,
   source: "John D Payne"
   },
-]
+];
   console.log(quotes);
 
 /***
- * `getRandomQuote` function
+ * `getRandomQuote` function returns a random quote from the quotes array
 ***/
+function getRandomQuote() {quotes[Math.floor(Math.random() * quotes.length)];
 
-
+};
+// Will need an if else value that prints the additional properties of "year" and "citation" where applicable.
 
 /***
  * `printQuote` function
 ***/
-
+function printQuote () {
+i = 0; 
+};
 
 
 /***
