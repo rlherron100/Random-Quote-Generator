@@ -57,6 +57,7 @@ var quotes = [
     return array[Math.floor(Math.random() * array.length)];
   }
   
+  getRandomQuote (quotes)
 // 
 
 
