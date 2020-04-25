@@ -47,15 +47,20 @@ var quotes = [
   source: "John D Payne"
   },
 ];
-  console.log(quotes);
+  // console.log(quotes);
 
 /***
  * `getRandomQuote` function returns a random quote from the quotes array
 ***/
-function getRandomQuote() {quotes[Math.floor(Math.random() * quotes.length)];
 
-};
-// Will need an if else value that prints the additional properties of "year" and "citation" where applicable.
+  function getRandomQuote (array) {
+    return array[Math.floor(Math.random() * array.length)];
+  }
+  
+// 
+
+
+
 
 /***
  * `printQuote` function
