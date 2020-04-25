@@ -10,7 +10,7 @@ project 1 - A Random Quote Generator
 /*** 
  * `quotes` array 
 ***/
-// REMEMBER an object array has one actual "array" in it. It's array location is 0,0. The objects themselves are called by name??
+
 var quotes = [
   {
   quote: "I consider looseness with words no less of a defect than looseness of the bowels.",
@@ -58,8 +58,6 @@ var quotes = [
   }
   
   getRandomQuote (quotes)
-// 
-
 
 
 
