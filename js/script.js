@@ -64,8 +64,8 @@ var quotes = [
 /***
  * `printQuote` function
 ***/
-function printQuote () {
-i = 0; 
+function printQuote (message) {
+innerHTML
 };
 
 
