@@ -31,12 +31,14 @@ var quotes = [
   {
   quote: "It is evident, by both Scripture and reason, that God is infinitely, eternally, unchangeably, and independently glorious and happy: that He cannot be profited by, or receive any thing from, the creature.",
   source: "Jonathan Edwards",
-  citation: "TBD"
+  citation:" citation",
+  
   },
   {
   quote: "The love of God in our culture has been purged of anything the culture finds uncomfortable. The love of God has been sanitized, democratized, and above all sentimentalized." ,
   source: "D.A. Carson",
-  year: "TBD"  
+  year: "year"  
+ 
   },
   {
   quote: "No matter how intense our experiences, no matter how acute our perceptions of what we think God would have us do, we cannot be certain God has spoken unless our revelation is based on Scripture." ,
@@ -64,15 +66,15 @@ var quotes = [
 ***/
 function printQuote () {
   var postedQuote= getRandomQuote (quotes);
-var stringQuote = 
-    `<p class= "quote"> ${postedQuote.quote}</p>`;
-    `<p class = "source"> ${postedQuote.source}</p>`;
+  var stringQuote = 
+    `<p class= "quote"> ${postedQuote.quote}</p>
+    <p class = "source"> ${postedQuote.source}</p>`;
   // if the postedQuote has a citation or year value, this if else if conditional adds it to the html.
     if (postedQuote.citation) 
-     {stringQuote += `<span class="citation"> ${postedQuote.citation}</span> </p>`;
+     {stringQuote += `<span class="citation"> ${postedQuote.citation} </span> </p>`;
     }
       else if (postedQuote.year)
-    {stringQuote += `<span class"year"> ${postedQuote.year}</span> </p>`;};
+    {stringQuote += `<span class"year"> ${postedQuote.year} </span> </p>`;};
   
   document.getElementById('quote-box').innerHTML = stringQuote; 
 };
