@@ -57,9 +57,13 @@ var quotes = [
   }
   // stringQuote stylizes postedQuote (which is a pull from getRandomQuote) into the html
   
-var postedQuote= getRandomQuote (quotes);
 
-
+   
+/***
+ * `printQuote` function
+***/
+function printQuote () {
+  var postedQuote= getRandomQuote (quotes);
 var stringQuote = 
     `<p class= "quote"> ${postedQuote.quote}</p>`;
     `<p class = "source"> ${postedQuote.source}</p>`;
@@ -70,11 +74,6 @@ var stringQuote =
       else if (postedQuote.year)
     {stringQuote += `<span class"year"> ${postedQuote.year}</span> </p>`;};
   
-   
-/***
- * `printQuote` function
-***/
-function printQuote (stringQuote) {
   document.getElementById('quote-box').innerHTML = stringQuote; 
 };
 
