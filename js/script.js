@@ -52,26 +52,39 @@ var quotes = [
 /***
  * `getRandomQuote` function returns a random quote from the quotes array
 ***/
-
   function getRandomQuote (array) {
     return array[Math.floor(Math.random() * array.length)];
   }
+  // stringQuote stylizes postedQuote (which is a pull from getRandomQuote) into the html
   
-  getRandomQuote (quotes)
+var postedQuote= getRandomQuote (quotes);
 
 
-
+var stringQuote = 
+    `<p class= "quote"> ${postedQuote.quote}</p>`;
+    `<p class = "source"> ${postedQuote.source}</p>`;
+  // if the postedQuote has a citation or year value, this if else if conditional adds it to the html.
+    if (postedQuote.citation) 
+     {stringQuote += `<span class="citation"> ${postedQuote.citation}</span> </p>`;
+    }
+      else if (postedQuote.year)
+    {stringQuote += `<span class"year"> ${postedQuote.year}</span> </p>`;};
+  
+   
 /***
  * `printQuote` function
 ***/
-function printQuote (message) {
-innerHTML
+function printQuote (stringQuote) {
+  document.getElementById('quote-box').innerHTML = stringQuote; 
 };
 
 
+
+// getRandomQuote(quotes).quote, getRandomQuote(quotes).source
+
 /***
  * click event listener for the print quote button
- * DO NOT CHANGE THE CODE BELOW!!
+ * DO NOT CHANGE THE CODE!!
 ***/
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
