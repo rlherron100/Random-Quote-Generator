@@ -71,10 +71,12 @@ function printQuote () {
     <p class = "source"> ${postedQuote.source}</p>`;
   // if the postedQuote has a citation or year value, this if else if conditional adds it to the html.
     if (postedQuote.citation) 
-     {stringQuote += `<span class="citation"> ${postedQuote.citation} </span> </p>`;
+     {stringQuote += `<p class "citation"<span class="citation"> <p>
+      ${postedQuote.citation}</span> </p>`;
     }
       else if (postedQuote.year)
-    {stringQuote += `<span class"year"> ${postedQuote.year} </span> </p>`;};
+    {stringQuote += `<p class "source"><span class "year">     
+     ${postedQuote.year} </span> </p>`;};
   
   document.getElementById('quote-box').innerHTML = stringQuote; 
 };
