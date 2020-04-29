@@ -13,40 +13,40 @@ project 1 - A Random Quote Generator
 
 var quotes = [
   {
-  quote: "I consider looseness with words no less of a defect than looseness of the bowels.",
-  source: "John Calvin"
+  quote: "Adopt the pace of nature: her secret is patience.",
+  source: "Ralph Waldo Emerson"
   },
   {
-  quote: "God chooses us, not because we believe, but that we may believe.",
-  source: "Augustine of Hippo"
+  quote: "Brute animals are the most healthy, and they are exposed to all weather, and of men, those are healthiest who are the most exposed.",
+  source: "Thomas Jefferson"
   },
   {
-  quote: "A believer's dying day is his ascension day to glory.",
-  source: "Thomas Watson"
+  quote: "The mountains are calling and I must go.",
+  source: "John Muir"
   },
   {
-  quote: "If the final decision for the salvation of fallen sinners were left in the hands of fallen sinners, we would despair all hope that anyone would be saved.",
-  source: "R.C. Sproul"
+  quote: "Thousands of tired, nerve-shaken, over-civilized people are beginning to find out that going to the mountains is going home; that wildness is a necessity",
+  source: "John Muir",
+  citation: "Our National Parks"
   },
   {
-  quote: "It is evident, by both Scripture and reason, that God is infinitely, eternally, unchangeably, and independently glorious and happy: that He cannot be profited by, or receive any thing from, the creature.",
-  source: "Jonathan Edwards",
-  citation:" citation",
+  quote: "The lack of power to take joy in outdoor nature is as real a misfortune as the lack of power to take joy in books",
+  source: "Theodore Roosevelt",
   
   },
   {
-  quote: "The love of God in our culture has been purged of anything the culture finds uncomfortable. The love of God has been sanitized, democratized, and above all sentimentalized." ,
-  source: "D.A. Carson",
-  year: "year"  
+  quote: "If you have built castles in the air, your work need not be lost; that is where they should be. Now put the foundations under them." ,
+  source: "Henry David Thoreau"
  
   },
   {
-  quote: "No matter how intense our experiences, no matter how acute our perceptions of what we think God would have us do, we cannot be certain God has spoken unless our revelation is based on Scripture." ,
-  source: "James Montgomery Boice"  
+  quote: "All good things are wild and free." ,
+  source: "Henry David Thoreau"  
   },
   {
-  quote: "Rythyms of piety, soccer, Lord's Day Worship, Clemson, and Warm Greetings." ,
-  source: "John D Payne"
+  quote: "These woods are lovely, dark and deep, But I have promises to keep, And miles to go before I sleep, And miles to go before I sleep." ,
+  source: "Robert Frost",
+  year: "1923"
   },
 ];
   // console.log(quotes);
